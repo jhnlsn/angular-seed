@@ -2,12 +2,16 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Beautiful Sunrise</title>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" />
   <link type="text/css" rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,29 +20,31 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="#/">Randomness</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#/view1">Basic Example</a></li>
-          <li><a href="#/view2">Theme</a></li>
+          <li><a href="https://www.twitter.com/jhnlsn" target="_blank">@jhnlsn</a></li>
+          <li><a href="https://github.com/johnymonster" target="_blank">Github</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/login">Login</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  
-  <div class="container">
-    <div ng-view></div>
-    <div>Angular seed app: v<span app-version></span></div>
+  <div ng-view></div>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">Random: v<span app-version></span></p>
+    </div>
   </div>
-  
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+  <!--<script src="lib/angular/angular.js"></script>-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+  <!--<script src="lib/angular/angular-route.js"></script>-->
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
