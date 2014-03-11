@@ -23,6 +23,14 @@ var loginController = function($scope, $timeout) {
   $scope.tracking = {img:""};
 }
 
+var marvelController = function($scope, $http) {
+  $http.get('http://jhnlsn.com:3000/marvel').success(function(data){
+    $scope.marvel = data.names;
+    console.log($scope.marvel);
+  });
+}
+
+myApp.controller('marvelCtrl', marvelController);
 myApp.controller('loginCtrl', loginController);
 myApp.controller('MyCtrl1', [function(){}]);
 myApp.controller('MyCtrl2', [function(){}]);

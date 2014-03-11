@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    Search: <input ng-model="query"/>
+  </div>
+  <div class="row">
+    <table class="table table-condensed">
+      <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="name in marvel | filter:query track by $index">
+        <td>{{name}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
